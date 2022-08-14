@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muebles S.A.</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <header>
+        <nav class="navbar-fixed">
+          <img id="logo" src="./images/logo.png" alt="logo">
+          <h1>Muebles S.A. Tienda Online</h1>
+          <button id="cesta-carrito"><i class="fas fa-shopping-cart"><span id="contador-carrito"> 0</span></i></button>
+        </nav>
+            
+  </header>
+
+  <main id="producto-contenedor">
+
+  </main>
+
+  <div class="modal-contenedor">
+    <div class="modal-carrito">
+      <h3>Tu Selección</h3>
+      <button id="btn-cerrar-carrito"><i class="far fa-times-circle"></i></button>
+      <div id="carrito-contenedor">
+
+      </div>
+      <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+      <br>
+      <button class="btn" id="botonFinalizar">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <script src="./src/data/stock.js" type="module"></script>
+  <script src="./src/components/utils/modal.js" type="module"></script>
+  <script src="./src/App.js" type="module"></script>
+  <script src="./src/index.js" type="module"></script>
+  <script src="./src/components/carrito/actualizarCarrito.js" type="module"></script>
+  <script src="./src/components/carrito/carritoIndex.js" type="module"></script>
+  <script src="./src/controllers/productosController.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+
+</html>
